@@ -14,6 +14,8 @@ public class Inicial {
 		valores[i] = in.nextDouble();
 		
 	}
+	valores[0]=15;
+	valores[valores.length-1]=15;
 	System.out.println("Mostrando los valores del array opcion 1");
 	//mostrar los valores del array opcion 1
 	for (int i = 0; i < valores.length; i++) {
@@ -27,9 +29,27 @@ public class Inicial {
 		System.out.print(d+"\t");
 		
 	}
+	//calcular valor medio
+	double suma=0;
+	for (double d : valores) {
+		suma+=d;
+		
+	}
+	double media = suma/TAMANO;
+	System.out.printf("%nEl valor medio es %.2f\n",media);
+	
+	//numeros de elemento que esta por debajo de la media
+	int contador=0;
+	for (int i = 0; i < valores.length; i++) {
+		if (valores[i] <media)
+			contador++;
+		
+	}
+	System.out.println("Numero de valores por debajo de la media: "+contador);
 	in.close();	
 }
-
+	
+	
 	}
 
 
