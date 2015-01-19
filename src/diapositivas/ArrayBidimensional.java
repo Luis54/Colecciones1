@@ -23,8 +23,25 @@ public class ArrayBidimensional {
 		//definimos una nueva matriz y los valores estan invertido
 		//es decir el primero de este nuevo array es el ultimo
 		//del array anterior
+		System.out.println("\n");
 		double [][] NTABLA = new double [4][3];
+		//contador de filas
+		int contadorFilas=0;
+		for (int i = TABLA.length-1; i >=0; i--) {
+			//contdor columnas
+			int contadorColumnas=0;
+			for (int j =  TABLA[i].length-1; j>=0 ; j--) {
+				NTABLA [contadorFilas][contadorColumnas]=TABLA[i][j];
+				contadorColumnas++;
+				System.out.print("Posicion "+i+","+j+" : " + TABLA[i][j]+"\t");
+				
+			}
+			contadorFilas++;
+			System.out.println("");
 			
+			
+		}
+		
 	}
 
 }
