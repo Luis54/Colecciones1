@@ -33,6 +33,10 @@ public class ListaInicial {
 		System.out.println("La Lista contiene : "+list.toString());
 		//imprimimos la lista sin necesidad del toString
 		System.out.println(list);
+		//borramos la lista
+		list.clear();
+		//mostramos la lista vacia
+		System.out.println("Lista vacia: " +list);
 	}
 
 }
