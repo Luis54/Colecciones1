@@ -7,7 +7,9 @@ public class ListaInicial {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//creamos una lista vacio
-		ArrayList list = new ArrayList ();
+	    //creamos la lista vacia y parametrizamos poniendo 
+		//el objeto lo que va a contener <String>
+		ArrayList <String> list = new ArrayList <String> ();
 		//miramos el tamaño de la lista
 		System.out.println("Tamaño de la lista es : "+list.size());
 		//añadimos objetos a la lista

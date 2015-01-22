@@ -38,8 +38,6 @@ public class ArrayBidimensional {
 			}
 			contadorFilas++;
 			System.out.println("");
-			
-			
 		}
 		
 	}
