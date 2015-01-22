@@ -7,16 +7,21 @@ public class Colecciones1 {
 	private int[] Numero;
 
 	public Colecciones1() {
-		Numero = new int[]{1,2,3,4,5,6,7,8,9,10,11,12};
+		this.Numero = new int[12];
 	}
+
 
 	public int[] getNumero() {
 		return Numero;
 	}
 
-	public void setNumero(int[] numero) {
-		Numero = numero;
+
+
+	public void setNumeroPosicion(int posicion,int valor) {
+		this.Numero[posicion]=valor;
 	}
+
+
 
 	@Override
 	public String toString() {
