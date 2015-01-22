@@ -46,6 +46,15 @@ public class TestColecciones1 {
 			
 		}
 		System.out.println("Elemeteo mas pequeño es " +valorMenor);
+		//Muestra todos los valores en tres filas de cuatro columnas, con una sepa-
+		//racion de cinco espacios
+		for (int i = 0; i < valores.getNumero().length; i++) {
+			System.out.printf("%5d",valores.getNumero()[i]);
+			if((i+1)%4 == 0)
+			System.out.println();
+			
+			
+		}
 	}
 }
 
