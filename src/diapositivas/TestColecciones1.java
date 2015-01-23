@@ -35,7 +35,7 @@ public class TestColecciones1 {
 																
 		}
 		System.out.println(valores);
-		//Calcula ahora el valor mas peque~no almacenado en el array
+		//Calcula ahora el valor mas pequeño almacenado en el array
 		Arrays.sort(valores.getNumero());
 		System.out.println("Elemeteo mas pequeño es " +valores.getNumero()[0]);
 		//metodo casero

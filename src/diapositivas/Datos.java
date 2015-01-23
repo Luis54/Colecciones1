@@ -10,32 +10,39 @@ public class Datos {
 		this.array = array;
 	}
 	//El valor medio de dichos datos.
-	//public double valorMedio(){
-		//int suma= 0;
-		//for (int i = 0; i < array.length-1; i++) {
-			//suma+=valorMedio()[i];
-		//}	System.out.println(suma);
-	//}
+	public double valorMedio(){
+		double suma= 0;
+		for (int i = 0; i < array.length; i++) {
+			suma+=array[i];
+		}	
+		return suma/this.array.length;
+	}
 	//La desviacion tipica
-	public double[] desviacionTipica(){
-		return array;
+	public double desviacionTipica(){
+		double sumaArray = 0;
+		for (int i = 0; i < array.length; i++) {
+			sumaArray+=Math.sqrt(Math.pow(array[i]-this.valorMedio(),2));	
+		}
+		return Math.sqrt(sumaArray/this.array.length);
 	}
 	//Numero de datos que se encuentran por debajo de la media
-	public double[] numeropordebajodelamedia(){
-		return array;
+	public double numeropordebajodelamedia(){
+		double contador = 0;
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] < this.valorMedio()) {
+			contador++;	
+		}
 	}
+		return contador;
+}
 	//El valor minimo.
-	public double[] valorMinimo(){
-		return array;
+	public double valorMinimo(){
+		Arrays.sort(array);
+		return this.array[0];
 	}
-	//El valor minimo.
-	public double[] valorMaximo(){
-		return array;
-	}
-	@Override
-	public String toString() {
-		return "Datos [array=" + Arrays.toString(array) + "]";
-	}
-	
-	
+	//El valor maximo.
+	public double valorMaximo(){
+		Arrays.sort(array);
+		return this.array[array.length-1];
+	}	
 }
